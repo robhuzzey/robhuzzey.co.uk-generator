@@ -17,15 +17,15 @@
 /* #Site Styles
 ================================================== */
 
+#mainSiteHeader {
+	font-size: 40px;
+}
+
 #mainSiteHeader .profilePic {
 	width: 100px;
 	position: absolute;
 	top: 20px;
 	right: 10px;
-}
-
-#mainSiteHeader {
-	font-size: 40px;
 }
 
 #mainSiteHeader h1 {
@@ -35,6 +35,18 @@
 
 #mainSiteHeader h2 {
 	font-size: 50%
+}
+
+
+
+nav {
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+}
+
+nav .button {
+	margin:5px 0;
+	text-align: center;
 }
 
 

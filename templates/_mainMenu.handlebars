@@ -1,9 +1,7 @@
 {{#if mainMenu}}
-	<nav>
-		<ol>
-			{{#each mainMenu}}
-				<li><a href="{{href}}" title="{{title}}" class="button">{{text}}</a></li>
-			{{/each}}
-		</ol>
+	<nav class="sixteen columns">
+	{{#each mainMenu}}
+		<a href="{{href}}" title="{{title}}" class="button one columns">{{text}}</a>
+	{{/each}}
 	</nav>
 {{/if}}
