@@ -7,6 +7,14 @@
 		"port": 9009
 	},
 
+	"bundles" : {
+		"/css/all.css": [
+			"/stylesheets/base.css",
+			"/stylesheets/skeleton.css",
+			"/stylesheets/layout.css"
+		]
+	},
+
 	"plugins": {
 		"content_handler": "./custom_content_handler",
 		"template_engine": "./handlebarsEngine"
