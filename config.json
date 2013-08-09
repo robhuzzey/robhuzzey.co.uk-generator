@@ -9,13 +9,18 @@
 
 	"bundles": {
 		"/css/all.css": [
-			"/css/normalize.css",	
-			"/css/main.css",
-			"/css/site.less"
+			"/stylesheets/base.css",	
+			"/stylesheets/skeleton.css",
+			"/atylesheets/layout.css"
 		]	
 	},
+
 	"plugins": {
 		"content_handler": "./custom_content_handler",
 		"template_engine": "./handlebarsEngine"
+	},
+
+	"generator" : {
+		"blank" : true
 	}
 }
