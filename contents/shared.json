@@ -1,0 +1,19 @@
+{
+	"mainMenu": [
+		{ 
+			"href" : "/",
+			"title" : "Back to home",
+			"text" : "Home"
+		},
+		{
+			"href" : "/books.html",
+			"title" : "Books I have read",
+			"text" : "Books"
+		},
+		{
+			"href" : "/links.html",
+			"title" : "Some links I find interesting",
+			"text" : "Links"
+		}
+	]
+}

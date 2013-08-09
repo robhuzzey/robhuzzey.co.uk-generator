@@ -1,0 +1,21 @@
+{
+	"template_dir": "templates", 
+	"content_dir": "contents",
+	"output_dir": "output",
+
+	"server": { 
+		"port": 9009
+	},
+
+	"bundles": {
+		"/css/all.css": [
+			"/css/normalize.css",	
+			"/css/main.css",
+			"/css/site.less"
+		]	
+	},
+	"plugins": {
+		"content_handler": "./custom_content_handler",
+		"template_engine": "./handlebarsEngine"
+	}
+}
