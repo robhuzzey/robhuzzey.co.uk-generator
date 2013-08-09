@@ -21,9 +21,6 @@
 </div>
 
 <footer id="mainSiteFooter" class="sixteen columns">
-
-	<hr />
-
 	<div class="eight columns alpha">
 		<h4>Rob's tweets</h4>
 		<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/theHuzz" data-widget-id="358668605472272384">Tweets by @theHuzz</a>

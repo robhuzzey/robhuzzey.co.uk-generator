@@ -11,7 +11,8 @@
 		"/css/all.css": [
 			"/stylesheets/base.css",
 			"/stylesheets/skeleton.css",
-			"/stylesheets/layout.css"
+			"/stylesheets/layout.css",
+			"/stylesheets/github-image.css"
 		]
 	},
 

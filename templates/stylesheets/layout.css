@@ -37,6 +37,9 @@
 	font-size: 50%
 }
 
+#mainSiteHeader a {
+	text-decoration: none;
+}
 
 
 nav {
@@ -48,6 +51,16 @@ nav {
 nav .button {
 	margin:5px 0;
 	text-align: center;
+}
+
+footer {
+	margin-top:1em;
+	clear:both;
+	overflow: hidden;
+}
+
+footer .github {
+	float:right;
 }
 
 

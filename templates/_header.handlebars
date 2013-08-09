@@ -9,8 +9,8 @@
   ================================================== -->
 	<meta charset="utf-8">
 	<title>{{page.title}}</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="description" content="{{page.description}}">
+	<meta name="author" content="Rob Huzzey">
 
 	<!-- Mobile Specific Metas
   ================================================== -->
@@ -18,12 +18,6 @@
 
 	<!-- CSS
   ================================================== -->
-
-  	<!--
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
-	-->
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -52,9 +46,11 @@
 	<div class="container">
 
 		<header id="mainSiteHeader" class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">Rob Huzzey</h1>
-			<h2 class="subHeading">Web Developer</h2>
-			<img src="images/rob-huzzey-web-developer.jpeg" alt="Profile picture of Rob Huzzey" class="profilePic" />
+			<a href="/" title="Go back to home">
+				<h1 class="remove-bottom" style="margin-top: 40px">Rob Huzzey</h1>
+				<h2 class="subHeading">Web Developer</h2>
+				<img src="images/rob-huzzey-web-developer.jpeg" alt="Profile picture of Rob Huzzey" class="profilePic" />
+			</a>
 		</header>
 
 		{{> mainMenu}}

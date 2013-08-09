@@ -1,4 +1,9 @@
 {
+	"page" : {
+		"title" : "Rob Huzzey - Web Developer based in Kent",
+		"description" : "Rob is a web developer working for a leading theme and theatre provider based in Kent."
+	},
+
 	"mainMenu": [
 		{ 
 			"href" : "/",
