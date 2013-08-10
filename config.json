@@ -18,7 +18,10 @@
 
 	"plugins": {
 		"content_handler": "./custom_content_handler",
-		"template_engine": "./handlebarsEngine"
+		"template_engine": "./handlebarsEngine",
+		"helpers": {
+			"custom_helper": "./custom_helpers" 
+		}
 	},
 
 	"generator" : {

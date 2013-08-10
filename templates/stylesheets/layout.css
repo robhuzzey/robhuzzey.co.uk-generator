@@ -48,9 +48,14 @@ nav {
 	margin-bottom: 2em;
 }
 
-nav .button {
-	margin:5px 0;
+nav a {
 	text-align: center;
+	text-decoration: none;
+	padding: 0.5em 1em;
+}
+
+nav a.active {
+	background: #EEE;
 }
 
 footer {
