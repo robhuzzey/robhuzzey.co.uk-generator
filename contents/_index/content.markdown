@@ -18,7 +18,10 @@
 <div class="one-third column">
 	<h3>What drives him?</h3>
 	<p>Rob is very passionate about technical solutions to problems. He loves "getting stuck in" &amp; debugging. Currently on a health drive, Rob is often seen in the Gym first thing in the morning preparing himself for the day.</p>
+	<a href="http://www.myfitnesspal.com"><img src="http://badges.myfitnesspal.com/badges/show/634/7042/6347042.weight-lost-sm.gif" border="0"></a><p style="text-align: center;width:226px;"><small>MyFitnessPal - <a href="http://www.myfitnesspal.com">Free Calorie Counter</a></small></p>
 </div>
+
+<hr />
 
 <footer id="mainSiteFooter" class="sixteen columns">
 	<div class="eight columns alpha">
