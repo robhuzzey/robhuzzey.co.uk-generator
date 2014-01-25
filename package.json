@@ -1,0 +1,22 @@
+{
+  "name": "robhuzzey.co.uk-generator",
+  "version": "0.0.1",
+  "description": "Simple generator using grunt to build static files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/robhuzzey/robhuzzey.co.uk-generator.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/robhuzzey/robhuzzey.co.uk-generator/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "handlebars": "~1.3.0"
+  }
+}
