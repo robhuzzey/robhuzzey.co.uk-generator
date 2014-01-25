@@ -1,0 +1,21 @@
+<h3>Books read {{title}}</h3>
+
+{{#googlebooks}}
+
+	{{#items}}
+
+		<div itemscope itemtype="http://schema.org/Book" class="four columns book">
+
+			<img itemprop="image" src="{{volumeInfo.imageLinks.thumbnail}}" />
+			
+			<div class="moreInfo">
+				<h5><span itemprop="name">{{volumeInfo.title}}</span>{{#if volumeInfo.authors}} -
+				by {{#each volumeInfo.authors}}<span itemprop="author">{{this}}</span>{{/each}}{{/if}}</h5>
+
+				<p itemprop="description">{{volumeInfo.description}}</p>
+			</div>
+		</div>
+
+	{{/items}}
+
+{{/googlebooks}}
