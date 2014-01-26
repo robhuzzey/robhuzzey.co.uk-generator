@@ -93,6 +93,7 @@ grunt.initConfig({
 	git_deploy: {
 		your_target: {
 			options: {
+				branch : 'master',
 				url: 'git@github.com:robhuzzey/robhuzzey.github.io.git',
 				message : '<%= grunt.option( "msg" ) || grunt.warn( "No commit message specified. use --msg=**your message**" ) %>'
 			},
