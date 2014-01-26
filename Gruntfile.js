@@ -36,12 +36,14 @@ grunt.initConfig({
 	// Get rid of all the files in distribution directory ready to re-generate
 	clean : [ 'dist/' ],
 
-	// Copy over the Images
+	// Copy over the files that don't need anything doing to them
 	copy: {
 		main: {
 			files: [
 				// includes files within path
-				{ expand: true, cwd : 'src/assets/images/', src: ['**'], dest: 'dist/assets/images/', filter: 'isFile' }
+				{ expand: true, cwd : 'src/assets/images/', src: ['**'], dest: 'dist/assets/images/', filter: 'isFile' },
+				{ expand : true, cwd : 'gh-pages-stuff/', src : [ '**' ], dest : 'dist/' },
+				{ expand : false, src : 'gh-pages-stuff/.gitignore', dest : 'dist/.gitignore' }
 			]
 		}
 	},
