@@ -12,6 +12,10 @@
 	"links" : {
 		"title" : "Links I have saved",
 		"description" : "These links are sourced from delicious, directly from the api."
+	},
+	"tweets" : {
+		"title" : "My tweets",
+		"description" : "Just some tweets"
 	}
 
 

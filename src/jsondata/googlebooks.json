@@ -1599,7 +1599,7 @@
   {
    "kind": "books#volume",
    "id": "CQYg20lTHtMC",
-   "etag": "Hn/9wora2JQ",
+   "etag": "3pnigc5j1ws",
    "selfLink": "https://www.googleapis.com/books/v1/volumes/CQYg20lTHtMC",
    "volumeInfo": {
     "title": "The Little Prince",
@@ -1622,7 +1622,7 @@
      "Juvenile Fiction"
     ],
     "averageRating": 4.0,
-    "ratingsCount": 3998,
+    "ratingsCount": 3997,
     "contentVersion": "0.1.2.0.preview.3",
     "imageLinks": {
      "smallThumbnail": "http://bks4.books.google.co.uk/books?id=CQYg20lTHtMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",

@@ -2,6 +2,8 @@ var grunt = require( "grunt" );
 
 grunt.initConfig({
 
+	pkg: grunt.file.readJSON( 'package.json' ),
+
 	fetchpages: {
 		dist: {
 			options: {
@@ -13,7 +15,7 @@ grunt.initConfig({
 				// base url for fetching pages via GruntJS files feature
 				filesBaseURL: 'http://localhost/',
 				// local target folder for fetched pages
-				target: 'jsondata/'
+				target: 'src/jsondata/'
 			}
 		}
 	},
@@ -58,6 +60,9 @@ grunt.initConfig({
 
 	// Minify the JS
 	uglify: {
+		options: {
+			banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+		},
 		my_target: {
 			files: {
 				'dist/assets/javascript/production.min.js' : [ 'src/assets/javascript/*' ]
@@ -109,6 +114,20 @@ grunt.initConfig({
 
 
 });
+
+
+
+grunt.registerTask( 'getTweets', 'Gets tweets using OAuth', function() {
+	var done = this.async(); // Register this task as an async one
+	var getTweets = require( './contentGenerators/twitter.js' );
+	getTweets(function( data ) {
+		grunt.file.write( './src/jsondata/tweets.json', data );
+		grunt.log.writeln( "GOT CONTENT" );
+		done();
+	});
+});
+
+
 
 // Clear out the distribution directory ready to re-generate site
 grunt.loadNpmTasks( 'grunt-contrib-clean' );
