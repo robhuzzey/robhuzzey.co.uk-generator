@@ -36,7 +36,7 @@ grunt.initConfig({
 	// Get rid of all the files in distribution directory ready to re-generate
 	clean : [ 'dist/' ],
 
-	// Move over the Images
+	// Copy over the Images
 	copy: {
 		main: {
 			files: [
@@ -55,6 +55,7 @@ grunt.initConfig({
 		}
 	},
 
+	// Minify the JS
 	uglify: {
 		my_target: {
 			files: {
@@ -63,6 +64,7 @@ grunt.initConfig({
 		}
 	},
 
+	// This is our grunt server
 	connect: {
 		all: {
 			options:{
@@ -74,6 +76,7 @@ grunt.initConfig({
 		}
 	},
 
+	// Look for file changes & live reload
 	watch: {
 		options: {
 			livereload: true
@@ -84,6 +87,7 @@ grunt.initConfig({
 		}
 	},
 
+	// Simple git deployment
 	git_deploy: {
 		your_target: {
 			options: {
@@ -96,27 +100,36 @@ grunt.initConfig({
 
 });
 
+// Clear out the distribution directory ready to re-generate site
 grunt.loadNpmTasks( 'grunt-contrib-clean' );
 
-
 grunt.loadNpmTasks( 'assemble' );
+
+// Get the 3rd party data for the site
 grunt.loadNpmTasks( 'grunt-fetch-pages' );
 
+// Move static assets
 grunt.loadNpmTasks( 'grunt-contrib-copy' );
 
+// Mush up the code
 grunt.loadNpmTasks( 'grunt-contrib-uglify' );
 grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
 
+// The server & watcher stuff
 grunt.loadNpmTasks( 'grunt-contrib-watch' );
 grunt.loadNpmTasks( 'grunt-contrib-connect' );
 
+// Push to git hubs
 grunt.loadNpmTasks( 'grunt-git-deploy' );
 
 // Generate the site from scratch
 grunt.registerTask( 'generatewithfiles', [ 'clean', 'fetchpages', 'copy', 'generate' ] );
 
+// Standard generate... used in watch task
 grunt.registerTask( 'generate', [ 'assemble', 'cssmin', 'uglify' ] );
 
+// Push the code out
 grunt.registerTask( 'deploy', [ 'generatewithfiles', 'git_deploy' ] );
 
+// Standard ;)
 grunt.registerTask( 'default', [ 'generatewithfiles', 'connect', 'watch' ] );
