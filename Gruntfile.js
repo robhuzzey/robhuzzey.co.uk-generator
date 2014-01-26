@@ -42,8 +42,7 @@ grunt.initConfig({
 			files: [
 				// includes files within path
 				{ expand: true, cwd : 'src/assets/images/', src: ['**'], dest: 'dist/assets/images/', filter: 'isFile' },
-				{ expand : true, cwd : 'gh-pages-stuff/', src : [ '**' ], dest : 'dist/' },
-				{ expand : false, src : 'gh-pages-stuff/.gitignore', dest : 'dist/.gitignore' }
+				{ expand : true, cwd : 'gh-pages-stuff/', src : [ '**' ], dest : 'dist/' }
 			]
 		}
 	},
