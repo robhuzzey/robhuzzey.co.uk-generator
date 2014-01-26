@@ -50,7 +50,15 @@ grunt.initConfig({
 	cssmin: {
 		combine: {
 			files: {
-				'dist/assets/css/production.css' : ['src/assets/stylesheets/*']
+				'dist/assets/css/production.min.css' : ['src/assets/stylesheets/*']
+			}
+		}
+	},
+
+	uglify: {
+		my_target: {
+			files: {
+				'dist/assets/javascript/production.min.js' : [ 'src/assets/javascript/*' ]
 			}
 		}
 	},
@@ -74,24 +82,41 @@ grunt.initConfig({
 			files: [ 'src/**/*' ],
 			tasks: [ 'generate' ]
 		}
+	},
+
+	git_deploy: {
+		your_target: {
+			options: {
+				url: 'git@github.com:robhuzzey/robhuzzey.github.io.git',
+				message : '<%= grunt.option( "msg" ) || grunt.warn( "No commit message specified. use --msg=**your message**" ) %>'
+			},
+			src: 'dist/'
+		},
 	}
 
 });
 
 grunt.loadNpmTasks( 'grunt-contrib-clean' );
 
+
 grunt.loadNpmTasks( 'assemble' );
 grunt.loadNpmTasks( 'grunt-fetch-pages' );
 
 grunt.loadNpmTasks( 'grunt-contrib-copy' );
+
+grunt.loadNpmTasks( 'grunt-contrib-uglify' );
 grunt.loadNpmTasks( 'grunt-contrib-cssmin' );
 
 grunt.loadNpmTasks( 'grunt-contrib-watch' );
 grunt.loadNpmTasks( 'grunt-contrib-connect' );
 
-// Generate the site from scratch
-grunt.registerTask( 'generatewithfiles', [ 'clean', 'fetchpages', 'assemble', 'copy', 'cssmin' ] );
+grunt.loadNpmTasks( 'grunt-git-deploy' );
 
-grunt.registerTask( 'generate', [ 'assemble', 'cssmin' ] );
+// Generate the site from scratch
+grunt.registerTask( 'generatewithfiles', [ 'clean', 'fetchpages', 'copy', 'generate' ] );
+
+grunt.registerTask( 'generate', [ 'assemble', 'cssmin', 'uglify' ] );
+
+grunt.registerTask( 'deploy', [ 'generatewithfiles', 'git_deploy' ] );
 
 grunt.registerTask( 'default', [ 'generatewithfiles', 'connect', 'watch' ] );
