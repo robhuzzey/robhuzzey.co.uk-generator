@@ -88,6 +88,10 @@ grunt.initConfig({
 		}
 	},
 
+
+
+	// TODO: Choose a better git deplot tool or make one!
+
 	// Simple git deployment
 	git_deploy: {
 		your_target: {
@@ -97,8 +101,12 @@ grunt.initConfig({
 				message : '<%= grunt.option( "msg" ) || grunt.warn( "No commit message specified. use --msg=**your message**" ) %>'
 			},
 			src: 'dist/'
-		},
+		}
 	}
+
+
+
+
 
 });
 
