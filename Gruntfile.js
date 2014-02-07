@@ -122,7 +122,7 @@ grunt.registerTask( 'getTweets', 'Gets tweets using OAuth', function() {
 	var getTweets = require( './contentGenerators/twitter.js' );
 	getTweets(function( data ) {
 		grunt.file.write( './src/jsondata/tweets.json', data );
-		grunt.log.writeln( "GOT CONTENT" );
+		grunt.log.writeln( "GOT TWEETS!!" );
 		done();
 	});
 });
@@ -152,7 +152,7 @@ grunt.loadNpmTasks( 'grunt-contrib-connect' );
 grunt.loadNpmTasks( 'grunt-git-deploy' );
 
 // Generate the site from scratch
-grunt.registerTask( 'generatewithfiles', [ 'clean', 'fetchpages', 'copy', 'generate' ] );
+grunt.registerTask( 'generatewithfiles', [ 'clean', 'fetchpages', 'getTweets', 'copy', 'generate' ] );
 
 // Standard generate... used in watch task
 grunt.registerTask( 'generate', [ 'assemble', 'cssmin', 'uglify' ] );
