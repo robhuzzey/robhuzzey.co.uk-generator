@@ -44,7 +44,8 @@ grunt.initConfig({
 			files: [
 				// includes files within path
 				{ expand: true, cwd : 'src/assets/images/', src: ['**'], dest: 'dist/assets/images/', filter: 'isFile' },
-				{ expand : true, cwd : 'gh-pages-stuff/', src : [ '**' ], dest : 'dist/' }
+				{ expand : true, cwd : 'gh-pages-stuff/', src : [ '**' ], dest : 'dist/' },
+				{ expand : true, cwd : 'flappy-bird/', src : [ '**' ], dest : 'dist/flappybird/' }
 			]
 		}
 	},

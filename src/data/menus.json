@@ -14,6 +14,11 @@
 				"href" : "/links.html",
 				"title" : "Some links I find interesting",
 				"text" : "Links"
+			},
+			{
+				"href" : "/flappybird/",
+				"title" : "An online flappybirds!",
+				"text" : "Flappy Bird"
 			}
 		]
 }
