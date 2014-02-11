@@ -10,7 +10,8 @@ grunt.initConfig({
 				urls: [
 					// list of remote urls to fetch, local destination file name (localFile) required
 					{url: 'https://api.del.icio.us/v2/json/djhuzz?red=api&count=100', localFile: 'delicious.json'},
-					{url: 'https://www.googleapis.com/books/v1/users/101891936560271534706/bookshelves/4/volumes?country=GB&maxResults=40', localFile: 'googlebooks.json'}
+					{url: 'https://www.googleapis.com/books/v1/users/101891936560271534706/bookshelves/4/volumes?country=GB&maxResults=40', localFile: 'googlebooks.json'},
+					{url: 'http://api.soundcloud.com/users/rob-huzzey/tracks.json?client_id=7814cc00fc36014d569c44b2134682f3', localFile: 'soundcloudtracks.json'}
 				],
 				// base url for fetching pages via GruntJS files feature
 				filesBaseURL: 'http://localhost/',
