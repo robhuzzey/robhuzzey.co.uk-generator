@@ -1,6 +1,6 @@
 <div class="one-third column">
 	<h3>About Rob?</h3>
-	<p>Currently working for a leading Theme &amp; Theatre provider as a Developer, Rob is an active member of the team always pushing for code quality &amp; assisting the team develop themselves as his role as Technical Talent Developer.</p>
+	<p>He loves to code!!!</p>
 </div>
 
 <div class="one-third column">
