@@ -19,11 +19,6 @@
 				"href" : "/my-music.html",
 				"title" : "A few tracks I have made",
 				"text" : "My Music"
-			},
-			{
-				"href" : "/flappybird/",
-				"title" : "An online flappybirds!",
-				"text" : "Flappy Bird"
 			}
 		]
 }

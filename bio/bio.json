@@ -2,6 +2,13 @@
 	"name" : "Rob Huzzey",
 	"age" : 34,
 	"description" : "Working as a web developer based in Kent (UK), Rob uses Javascript both client and server side as well as PHP, HTML and occasionally CSS",
+	"social" : [
+		{
+			"name" : "twitter",
+			"identifier" : "theHuzz",
+			"uri" : "https://twitter.com/theHuzz"
+		}
+	],
 	"location" : "Kent",
 	"likes" : [
 		"reading",
