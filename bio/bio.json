@@ -1,0 +1,16 @@
+{
+	"name" : "Rob Huzzey",
+	"age" : 34,
+	"description" : "Working as a web developer based in Kent (UK), Rob uses Javascript both client and server side as well as PHP, HTML and occasionally CSS",
+	"location" : "Kent",
+	"likes" : [
+		"reading",
+		"coding",
+		"eating"
+	],
+	"dislikes" : null,
+	"employer" : {
+		"name" : "Holiday Extras"
+	},
+	"position" : "Web Developer"
+}
