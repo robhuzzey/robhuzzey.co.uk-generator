@@ -1,0 +1,10 @@
+<h3>Some videos I like</h3>
+
+<div class="videos container">
+	{{#each youtube.items}}
+		<div class="video eight columns">
+			<h6>{{snippet.title}}</h6>
+			<iframe width="320" height="240" src="//www.youtube.com/embed/{{snippet.resourceId.videoId}}" frameborder="0" allowfullscreen></iframe>
+		</div>
+	{{/each}}
+</div>
