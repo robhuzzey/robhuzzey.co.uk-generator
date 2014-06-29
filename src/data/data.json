@@ -13,9 +13,13 @@
 		"title" : "Links I have saved",
 		"description" : "These links are sourced from delicious, directly from the api."
 	},
-	"tweets" : {
-		"title" : "My tweets",
-		"description" : "Just some tweets"
+	"videos" : {
+		"title" : "Some videos I like",
+		"description" : "Just some youtube clips"
+	},
+	"youtubeserpstest" : {
+		"title" : "Testing youtube serps",
+		"description" : "Literally just seeing if youtube video appears in serps"
 	}
 
 
